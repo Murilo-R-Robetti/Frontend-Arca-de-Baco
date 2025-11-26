@@ -14,10 +14,10 @@ export default function Login() {
 
         <div className="card-login">
           <label>Email</label>
-          <input type="email" placeholder="Valor" />
+          <input type="email" placeholder="Digite seu email" />
 
           <label>Senha</label>
-          <input type="password" placeholder="Valor" />
+          <input type="password" placeholder="Digite a senha" />
 
           <button className="botao-entrar">Entrar</button>
 
