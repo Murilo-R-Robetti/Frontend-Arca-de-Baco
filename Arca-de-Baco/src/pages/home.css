@@ -1,11 +1,12 @@
-.home-container {
+.containerHome {
   font-family: "Poppins", sans-serif;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   color: #fff;
   background-color: #3b1c28;
 }
 
-.top-block {
+.blocoTopo {
   display: flex;
   justify-content: space-between;
   padding: 70px 6%;
@@ -13,16 +14,16 @@
   background-color: #4c2232;
 }
 
-.top-text h1 {
+.textoTopo h1 {
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-.top-text span {
+.textoTopo span {
   font-style: italic;
 }
 
-.top-text p {
+.textoTopo p {
   width: 80%;
   margin-top: 20px;
   line-height: 1.5;
@@ -39,7 +40,7 @@
   font-weight: 600;
 }
 
-.top-image img {
+.imagemTopo img {
   width: 360px;
   border-radius: 8px;
 }
@@ -64,49 +65,120 @@
   border-radius: 10px;
 }
 
-.about-container {
+.containerSobre {
   text-align: center;
   padding: 60px 6%;
   background-color: #4c2232;
 }
 
-.about-container h2 {
+.containerSobre h2 {
   font-size: 2rem;
   margin-bottom: 30px;
 }
 
-.about-columns {
+.colunaSobre {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   text-align: left;
 }
 
-.about-columns p {
+.colunaSobre p {
   width: 33%;
   line-height: 1.6;
 }
 
 @media (max-width: 900px) {
-  .top-block {
+  .blocoTopo {
     flex-direction: column;
     text-align: center;
   }
 
-  .top-text p {
+  .textoTopo p {
     width: 100%;
   }
 
-  .top-image img {
+  .imagemTopo img {
     margin-top: 30px;
     width: 80%;
   }
 
-  .about-columns {
+  .colunaSobre {
     flex-direction: column;
   }
 
-  .about-columns p {
+  .colunaSobre p {
     width: 100%;
   }
+}
+
+.containerExplore {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #ffffff;
+  padding: 40px 0;
+}
+
+.imagemExplore img {
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.explore {
+  width: 45%;
+  background: #e7e7e7;
+  padding: 40px;
+  border-radius: 0 50px 50px 0;
+  color: #333;
+}
+
+.logoExplore{
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.explore h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.explore p {
+  line-height: 1.5;
+  width: 80%;
+}
+
+
+.barraContatos {
+  background: #4c2232;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 50px;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.iconesSociais {
+  font-size: 26px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #ffd6e0;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  color: #3b1c28;
+  text-align: left;
+}
+
+.logoFooter img {
+  width: 90px;
+}
+
+.colunaFooter p {
+  margin: 6px 0;
+  font-size: 1rem;
 }
