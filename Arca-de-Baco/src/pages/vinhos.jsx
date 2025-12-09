@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./vinhos.css";
 // import imagemBanner from "./bannerVinhos.png";/* vou add as img depois */
 // import vinhoUm from "./vinho1.png";/* vou add a img depois */
@@ -10,7 +11,17 @@ import "./vinhos.css";
 export default function Vinhos() {
   return (
     <div className="containerVinhos">
-      
+      <nav className="navTopo">
+        <h2 className="navLogo">Arca de Baco</h2>
+
+        <ul className="navLinks">
+          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/compra">Compra</Link></li>
+          <li><Link to="/vinhos">Vinhos</Link></li>
+          <li><Link to="/login">Login</Link></li>
+        </ul>
+      </nav>
+
       <div className="bannerVinhos">
         {/* <img src={imagemBanner} alt="garrafas de vinho" /> */}
       </div>

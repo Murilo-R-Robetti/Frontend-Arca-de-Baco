@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./home.css";
 import logo from "./logoBaco.png";
 import vinhos from "./vinhos.png";
@@ -8,6 +9,16 @@ import barricas from "./barricas.png";
 export default function Home() {
   return (
     <div className="containerHome">
+      <nav className="navTopo">
+              <h2 className="navLogo">Arca de Baco</h2>
+      
+              <ul className="navLinks">
+                <li><Link to="/home">Home</Link></li>
+                <li><Link to="/compra">Compra</Link></li>
+                <li><Link to="/vinhos">Vinhos</Link></li>
+                <li><Link to="/login">Login</Link></li>
+              </ul>
+            </nav>
 
       <div className="blocoTopo">
         <div className="textoTopo">
@@ -34,6 +45,7 @@ export default function Home() {
       <div className="adega">
         <img src={adega} alt="imagem adega" className="adegaImg" />
       </div>
+
       <div className="containerSobre">
         <h2>Arca De Baco</h2>
 
@@ -66,6 +78,7 @@ export default function Home() {
         <div className="explore">
           <img src={logo} alt="logo da adega" className="logoExplore" />
           <h2>Explore nossa coleção</h2>
+
           <p>
             Descubra os melhores vinhos de todo o mundo, cuidadosamente
             selecionados e meticulosamente cuidados em nossa adega de última
@@ -97,7 +110,6 @@ export default function Home() {
           <p>Opções</p>
           <p>Contatos</p>
         </div>
-
       </div>
 
     </div>

@@ -1,13 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./compra.css";
-// Imagens serão adicionadas depois.
+
 export default function Compra() {
   const listaProdutos = [
     {
       id: 1,
       nomeProduto: "Vinho Preto",
       precoProduto: 50,
-    //   imagemProduto: "/imgs/vinho1.png",
       descricaoProduto:
         "Bem-vindo à nossa adega, onde o aroma de vinhos vintage habilmente elaborados preenche o ar. Mergulhe na rica história e nos sabores requintados da nossa coleção cuidadosamente selecionada.",
     },
@@ -15,7 +15,6 @@ export default function Compra() {
       id: 2,
       nomeProduto: "Vinho Preto",
       precoProduto: 100,
-    //   imagemProduto: "/imgs/vinho2.png",
       descricaoProduto:
         "Bem-vindo à nossa adega, onde o aroma de vinhos vintage habilmente elaborados preenche o ar. Mergulhe na rica história e nos sabores requintados da nossa coleção cuidadosamente selecionada.",
     },
@@ -23,7 +22,6 @@ export default function Compra() {
       id: 3,
       nomeProduto: "Vinho Preto",
       precoProduto: 500,
-    //   imagemProduto: "/imgs/vinho3.png",
       descricaoProduto:
         "Bem-vindo à nossa adega, onde o aroma de vinhos vintage habilmente elaborados preenche o ar. Mergulhe na rica história e nos sabores requintados da nossa coleção cuidadosamente selecionada.",
     },
@@ -31,10 +29,19 @@ export default function Compra() {
 
   return (
     <div className="containerCompra">
+
+      <nav className="navTopo">
+              <h2 className="navLogo">Arca de Baco</h2>
+              <ul className="navLinks">
+                <li><Link to="/home">Home</Link></li>
+                <li><Link to="/compra">Compra</Link></li>
+                <li><Link to="/vinhos">Vinhos</Link></li>
+                <li><Link to="/login">Login</Link></li>
+              </ul>
+            </nav>
+
       {listaProdutos.map((item) => (
         <div key={item.id} className="cardCompra">
-          {/* <img src={item.imagemProduto} alt={item.nomeProduto} className="imagemProduto" /> */}
-
           <div className="conteudoCompra">
             <h2 className="nomeProduto">{item.nomeProduto}</h2>
             <p className="descricaoProduto">{item.descricaoProduto}</p>
@@ -65,8 +72,6 @@ export default function Compra() {
       </div>
 
       <footer className="footerCompra">
-        {/* <img src="/imgs/logo.png" alt="Logo" className="logoFooter" /> */}
-
         <div className="colunaFooter">
           <p>Sobre</p>
           <p>Home</p>

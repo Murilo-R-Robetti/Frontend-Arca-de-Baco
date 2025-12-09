@@ -182,3 +182,35 @@
   margin: 6px 0;
   font-size: 1rem;
 }
+.navTopo {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.navLogo {
+  font-size: 26px;
+  font-weight: bold;
+  color: black;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.navLinks a:hover {
+  opacity: 0.6;
+}
