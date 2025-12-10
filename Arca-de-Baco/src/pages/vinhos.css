@@ -1,7 +1,6 @@
 .containerVinhos {
   width: 100%;
   font-family: "Poppins", sans-serif;
-  color: #333;
 }
 
 .bannerVinhos img {
@@ -13,6 +12,7 @@
 .tituloVinhos {
   text-align: center;
   background-color: #4c2232;
+  color: white;
 }
 
 .logoTitulo {
@@ -25,7 +25,6 @@
   font-size: 32px;
   font-weight: 600;
   margin-top: 10px;
-  color: #444;
 }
 
 .cardsVinhos {

@@ -1,13 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./compra.css";
-
+import vinhoReservado from "./imagens/vinhoReservado.png";
+import vinhoReservado2 from "./imagens/vinhoReservadoBlack.png";
+import vinhoReservado3 from "./imagens/reservadoShiraz.png";
 export default function Compra() {
   const listaProdutos = [
     {
       id: 1,
       nomeProduto: "Vinho Preto",
       precoProduto: 50,
+      imagemProduto: vinhoReservado,
       descricaoProduto:
         "Bem-vindo à nossa adega, onde o aroma de vinhos vintage habilmente elaborados preenche o ar. Mergulhe na rica história e nos sabores requintados da nossa coleção cuidadosamente selecionada.",
     },
@@ -15,6 +18,7 @@ export default function Compra() {
       id: 2,
       nomeProduto: "Vinho Preto",
       precoProduto: 100,
+      imagemProduto: vinhoReservado2,
       descricaoProduto:
         "Bem-vindo à nossa adega, onde o aroma de vinhos vintage habilmente elaborados preenche o ar. Mergulhe na rica história e nos sabores requintados da nossa coleção cuidadosamente selecionada.",
     },
@@ -22,6 +26,7 @@ export default function Compra() {
       id: 3,
       nomeProduto: "Vinho Preto",
       precoProduto: 500,
+      imagemProduto: vinhoReservado3,
       descricaoProduto:
         "Bem-vindo à nossa adega, onde o aroma de vinhos vintage habilmente elaborados preenche o ar. Mergulhe na rica história e nos sabores requintados da nossa coleção cuidadosamente selecionada.",
     },
@@ -42,6 +47,7 @@ export default function Compra() {
 
       {listaProdutos.map((item) => (
         <div key={item.id} className="cardCompra">
+          <img src={item.imagemProduto} alt={item.nomeProduto} className="imagemProduto" />
           <div className="conteudoCompra">
             <h2 className="nomeProduto">{item.nomeProduto}</h2>
             <p className="descricaoProduto">{item.descricaoProduto}</p>

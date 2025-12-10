@@ -1,6 +1,6 @@
 import React from "react";
 import "./login.css";
-import imagemTaça from "../imagemVinho.png";
+import imagemTaça from "../pages/imagens/imagemVinho.png";
 
 export default function Login() {
   return (

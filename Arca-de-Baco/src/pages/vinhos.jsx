@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./vinhos.css";
-import imagemBanner from "./vinhosTopo.png";
-import vinhoReservado from "./vinhoReservado.png";
-import vinhoReservado2 from "./vinhoReservadoBlack.png";
-import vinhoReservado3 from "./reservadoShiraz.png";
-import imagemRefinado from "./refinado.png";
-import imagemLogo from "./logoBaco.png";
+import imagemBanner from "./imagens/vinhosTopo.png";
+import vinhoReservado from "./imagens/vinhoReservado.png";
+import vinhoReservado2 from "./imagens/vinhoReservadoBlack.png";
+import vinhoReservado3 from "./imagens/reservadoShiraz.png";
+import imagemRefinado from "./imagens/refinado.png";
+import imagemLogo from "./imagens/logoBaco.png";
 
 export default function Vinhos() {
   return (
