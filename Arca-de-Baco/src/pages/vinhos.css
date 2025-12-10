@@ -12,11 +12,12 @@
 
 .tituloVinhos {
   text-align: center;
-  margin: 40px 0 20px;
+  background-color: #4c2232;
 }
 
 .logoTitulo {
-  width: 60px;
+  height: 150px;
+  width: 100px;
   opacity: 0.8;
 }
 
@@ -33,6 +34,7 @@
   gap: 25px;
   padding: 20px;
   flex-wrap: wrap;
+  background-color: #4c2232;
 }
 
 .cardVinho {

@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./vinhos.css";
-// import imagemBanner from "./bannerVinhos.png";/* vou add as img depois */
-// import vinhoUm from "./vinho1.png";/* vou add a img depois */
-// import vinhoDois from "./vinho2.png";/* vou add a img depois */
-// import vinhoTres from "./vinho3.png";/* vou add a img depois */
-// import imagemRefinado from "./refinado.png";/* vou add as img depois */
-// import imagemLogo from "./logoBaco.png";/* vou add as img depois */
+import imagemBanner from "./vinhosTopo.png";
+import vinhoReservado from "./vinhoReservado.png";
+import vinhoReservado2 from "./vinhoReservadoBlack.png";
+import vinhoReservado3 from "./reservadoShiraz.png";
+import imagemRefinado from "./refinado.png";
+import imagemLogo from "./logoBaco.png";
 
 export default function Vinhos() {
   return (
-    <div className="containerVinhos">
+    <div className="containerVinhos"> 
+    
       <nav className="navTopo">
         <h2 className="navLogo">Arca de Baco</h2>
 
@@ -22,19 +23,19 @@ export default function Vinhos() {
         </ul>
       </nav>
 
-      <div className="bannerVinhos">
-        {/* <img src={imagemBanner} alt="garrafas de vinho" /> */}
+     <div className="bannerVinhos">
+       <img src={imagemBanner} alt="garrafas de vinho" />
       </div>
 
       <div className="tituloVinhos">
-        {/* <img src={imagemLogo} alt="logo" className="logoTitulo" /> */}
+        <img src={imagemLogo} alt="logo" className="logoTitulo" />
         <h2>Nossos Vinhos</h2>
       </div>
 
       <div className="cardsVinhos">
         
         <div className="cardVinho">
-          {/* <img src={vinhoUm} alt="Vinho 1" /> */}
+          <img src={vinhoReservado} alt="Vinho 1" />
           <span className="precoVinho">R$110</span>
           <p className="descricaoVinho">
             Um vinho encorpado com notas frutadas e final marcante.
@@ -42,7 +43,7 @@ export default function Vinhos() {
         </div>
 
         <div className="cardVinho">
-          {/* <img src={vinhoDois} alt="Vinho 2" /> */}
+          <img src={vinhoReservado2} alt="Vinho 2" />
           <span className="precoVinho">R$150</span>
           <p className="descricaoVinho">
             Elaborado com uvas selecionadas, ideal para ocasiões especiais.
@@ -50,7 +51,7 @@ export default function Vinhos() {
         </div>
 
         <div className="cardVinho">
-          {/* <img src={vinhoTres} alt="Vinho 3" /> */}
+          <img src={vinhoReservado3} alt="Vinho 3" />
           <span className="precoVinho">R$110</span>
           <p className="descricaoVinho">
             Suave, aromático e perfeito para harmonização refinada.
@@ -60,7 +61,7 @@ export default function Vinhos() {
       </div>
 
       <div className="secaoRefinados">
-        {/* <img src={imagemRefinado} alt="vinho refinado" /> */}
+        <img src={imagemRefinado} alt="vinho refinado" />
 
         <div className="textoRefinados">
           <h3>Refinados</h3>
@@ -74,7 +75,7 @@ export default function Vinhos() {
       </div>
 
       <div className="vinhosFooter">
-        {/* <img src={imagemLogo} alt="logo" className="logoFooter" /> */}
+        <img src={imagemLogo} alt="logo" className="logoFooter" />
 
         <div className="colunaFooter">
           <p>Sobre</p>
